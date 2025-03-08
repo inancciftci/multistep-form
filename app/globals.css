@@ -10,9 +10,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom color primary */
+
+  --color-primary-100: hsl(213, 96%, 18%);
+  --color-primary-200: hsl(243, 100%, 62%);
+  --color-primary-300: hsl(228, 100%, 84%);
+  --color-primary-400: hsl(206, 94%, 87%);
+  --color-primary-500: hsl(354, 84%, 57%);
+
+  /* Custom color neutral */
+
+  --color-neutral-100: hsl(231, 11%, 63%);
+  --color-neutral-200: hsl(229, 24%, 87%);
+  --color-neutral-300: hsl(217, 100%, 97%);
+  --color-neutral-400: hsl(231, 100%, 99%);
+  --color-neutral-500: hsl(0, 0%, 100%);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -20,7 +36,99 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--color-neutral-300);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom color classes */
+
+.text-primary-marine-blue {
+  color: hsl(213, 96%, 18%);
+}
+
+.text-primary-purplish-blue {
+  color: hsl(243, 100%, 62%);
+}
+
+.text-primary-pastel-blue {
+  color: hsl(228, 100%, 84%);
+}
+
+.text-primary-light-blue {
+  color: hsl(206, 94%, 87%);
+}
+
+.text-primary-strawberry-red {
+  color: hsl(354, 84%, 57%);
+}
+
+.text-neutral-cool-gray {
+  color: hsl(231, 11%, 63%);
+}
+
+.text-neutral-light-gray {
+  color: hsl(229, 24%, 87%);
+}
+
+.text-neutral-magnolia {
+  color: hsl(217, 100%, 97%);
+}
+
+.text-neutral-alabaster {
+  color: hsl(231, 100%, 99%);
+}
+
+.text-neutral-white {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Background color classes */
+
+.bg-primary-marine-blue {
+  background-color: hsl(213, 96%, 18%);
+}
+
+.bg-primary-purplish-blue {
+  background-color: hsl(243, 100%, 62%);
+}
+
+.bg-primary-pastel-blue {
+  background-color: hsl(228, 100%, 84%);
+}
+
+.bg-primary-light-blue {
+  background-color: hsl(206, 94%, 87%);
+}
+
+.bg-primary-strawberry-red {
+  background-color: hsl(354, 84%, 57%);
+}
+
+.bg-neutral-cool-gray {
+  background-color: hsl(231, 11%, 63%);
+}
+
+.bg-neutral-light-gray {
+  background-color: hsl(229, 24%, 87%);
+}
+
+.bg-neutral-magnolia {
+  background-color: hsl(217, 100%, 97%);
+}
+
+.bg-neutral-alabaster {
+  background-color: hsl(231, 100%, 99%);
+}
+
+.bg-neutral-white {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.form {
+  transition: filter 1s ease-in-out;
+}
+
+.form-step {
+  filter: blur(12px);
 }

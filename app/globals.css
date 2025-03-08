@@ -132,3 +132,15 @@ body {
 .form-step {
   filter: blur(12px);
 }
+
+.form-main {
+  transition: transform 1s ease-in-out;
+}
+
+.form-main-effect-next {
+  transform: scale(1.2);
+}
+
+.form-main-effect-prev {
+  transform: scale(0.8);
+}
